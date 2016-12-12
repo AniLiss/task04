@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("../fonts/ProximaNovaBold.otf"); }
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("../fonts/ProximaNovaRegular.otf"); }
+
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url("../fonts/ProximaNovaSemibold.otf"); }
+
+body {
+  margin: 0; }
+
+.photo-widget {
+  margin: 0 auto;
+  max-width: 320px;
+  font-family: "ProximaNovaRegular";
+  font-size: 13px;
+  color: #3f4041; }
+
+h1,
+p,
+figure,
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.photo-widget {
+  border: 1px solid #ebeced;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px 0 #a5a5a5;
+  margin: 20px auto; }
+
+.photo-widget__media-content {
+  background-color: #f5f6f7; }
+
+.photo-widget__photo {
+  max-height: 320px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+  .photo-widget__photo img {
+    margin-top: -20px;
+    width: 100%; }
+
+.photo-widget__title {
+  padding: 20px; }
+  .photo-widget__title h1 {
+    font-family: "ProximaNovaBold";
+    font-size: 16px;
+    font-weight: "ProximaNovaSemibold";
+    color: #3f4041; }
+
+.photo-widget__actions {
+  display: -ms-flexbox;
+  display: flex;
+  color: #797b7c;
+  padding-top: 10px; }
+
+.photo-widget__actions-item:first-child {
+  padding-left: 10px; }
+
+.photo-widget__actions-item {
+  padding-left: 30px; }
+
+.photo-widget__actions-item--repost, .photo-widget__actions-item--heart, .photo-widget__actions-item--message {
+  position: relative; }
+
+.photo-widget__actions-item--repost::before, .photo-widget__actions-item--heart::before, .photo-widget__actions-item--message::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 20px;
+  height: 15px;
+  left: -10px;
+  background-repeat: no-repeat; }
+
+.photo-widget__actions-item--repost::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 100 100' style='enable-background:new 0 0 100 100;' xml:space='preserve' width='14px' height='14px'%3E%3Cg%3E%3Cg%3E%3Cpath d='M24.9,66V39.9H35L17.5,20L0,39.9h10.1V70c0,5.523,4.476,10,10,10H65L52.195,66H24.9z M89.9,60.1V30 c0-5.523-4.477-10-10-10H35l12.804,14h27.295v26.1H65L82.5,80L100,60.1H89.9z' fill='%23b7b8b9'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.photo-widget__actions-item--heart::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 492.719 492.719' style='enable-background:new 0 0 492.719 492.719;' xml:space='preserve' width='13px' height='13px'%3E%3Cg id='Icons_18_'%3E%3Cpath d='M492.719,166.008c0-73.486-59.573-133.056-133.059-133.056c-47.985,0-89.891,25.484-113.302,63.569 c-23.408-38.085-65.332-63.569-113.316-63.569C59.556,32.952,0,92.522,0,166.008c0,40.009,17.729,75.803,45.671,100.178 l188.545,188.553c3.22,3.22,7.587,5.029,12.142,5.029c4.555,0,8.922-1.809,12.142-5.029l188.545-188.553 C474.988,241.811,492.719,206.017,492.719,166.008z' fill='%23b7b8b9'/%3E%3C/g%3E%3C/svg%3E");
+  top: 1px; }
+
+.photo-widget__actions-item--message::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 60.015 60.015' style='enable-background:new 0 0 60.015 60.015;' xml:space='preserve' width='13px' height='13px'%3E%3Cpath d='M42.008,0h-24c-9.925,0-18,8.075-18,18v14c0,9.925,8.075,18,18,18h1.78c6.968,0,13.519,2.713,18.446,7.64l1.876,1.877 c0.322,0.321,0.746,0.498,1.195,0.498c0.938,0,1.702-0.762,1.702-1.699v-8.344c9.462-0.521,17-8.383,17-17.973V18 C60.008,8.075,51.932,0,42.008,0z' fill='%23b7b8b9'/%3E%3C/svg%3E%0A");
+  top: 1px; }
+
+.photo-widget__actions-item--message:hover .photo-widget__actions-item--message::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 100 100' style='enable-background:new 0 0 100 100;' xml:space='preserve' width='13px' height='13px'%3E%3Cg%3E%3Cg%3E%3Cpath d='M24.9,66V39.9H35L17.5,20L0,39.9h10.1V70c0,5.523,4.476,10,10,10H65L52.195,66H24.9z M89.9,60.1V30 c0-5.523-4.477-10-10-10H35l12.804,14h27.295v26.1H65L82.5,80L100,60.1H89.9z' fill='%23d71d25'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.photo-widget__description {
+  padding: 20px;
+  border-top: 1px solid #ebeced;
+  border-bottom: 1px solid #ebeced;
+  background-color: #f5f6f7; }
+  .photo-widget__description p {
+    color: #797b7c; }
+  .photo-widget__description a {
+    font-family: "ProximaNovaSemibold";
+    color: #000; }
+
+.photo-widget__comments {
+  padding: 20px;
+  background-color: #eff0f1; }
+
+.photo-widget__comments-list {
+  max-height: 300px;
+  overflow: auto; }
+
+.photo-widget__comments-avatar {
+  width: 32px;
+  height: 32px;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
+  margin-right: 10px; }
+  .photo-widget__comments-avatar img {
+    border-radius: 3px; }
+
+.photo-widget__comments-name {
+  font-family: "ProximaNovaBold";
+  font-size: 14px;
+  line-height: 16px; }
+
+.photo-widget__comments-form {
+  width: 100%; }
+
+.photo-widget__comments-item {
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px; }
+  .photo-widget__comments-item form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    padding-left: 12px; }
+  .photo-widget__comments-item textarea {
+    resize: none;
+    font-family: "ProximaNovaRegular";
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 rgba(145, 145, 146, 0.1); }
+  .photo-widget__comments-item--active {
+    padding-top: 15px; }
+
+.photo-widget__comments-text {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%; }
+  .photo-widget__comments-text a {
+    color: #3f4041; }
+
+.photo-widget__button {
+  font-family: "ProximaNovaBold";
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #cf1c24;
+  border: 1px solid #b81820;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  outline: none; }

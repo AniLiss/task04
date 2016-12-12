@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<article class="photo-widget">
 
+    <figure class="photo-widget__media-content">
+        <div class="photo-widget__photo">
+            <img src="img/wdg-img-main-picture.jpg" alt="">
+        </div>
+
+        <figcaption class="photo-widget__title">
+            <h1>Matilda</h1>
+            <ul class="photo-widget__actions">
+                <li class="photo-widget__actions-item">
+                    <a class="photo-widget__actions-item photo-widget__actions-item--repost" href="#"></a>
+                    <span>26</span>
+                </li>
+                <li class="photo-widget__actions-item">
+                    <a class="photo-widget__actions-item photo-widget__actions-item--heart" href="#"></a>
+                    <span>10</span>
+                </li>
+                <li class="photo-widget__actions-item">
+                    <a class="photo-widget__actions-item photo-widget__actions-item--message" href="#"></a>
+                    <span>1</span>
+                </li>
+            </ul>
+        </figcaption>
+    </figure>
+
+    <div class="photo-widget__description">
+        <p>Pinned from <a href="http://blog.uncovet.com/">uncovet.com</a></p>
+    </div>
+    <div class="photo-widget__comments">
+        <ul class="photo-widget__comments-list">
+            <li class="photo-widget__comments-item">
+                <div class="photo-widget__comments-avatar">
+                    <a href="#"><img class="photo-widget__comments-avatar-1" src="img/wdg-pic-comment1.jpg" alt=""></a>
+                </div>
+                <div class="photo-widget__comments-text">
+                    <a href="#"><p class="photo-widget__comments-name">Hannah Kern</p></a>
+                    <p class="photo-widget__comments-message">Thats SWEEEEEEET!</p>
+                </div>
+            </li>
+            <li class="photo-widget__comments-item">
+                <div class="photo-widget__comments-avatar">
+                    <a href="#"><img class="photo-widget__comments-avatar-1" src="img/wdg-pic-comment1.jpg" alt=""></a>
+                </div>
+                <div class="photo-widget__comments-text">
+                    <a href="#"><p class="photo-widget__comments-name">Hannah Kern</p></a>
+                    <p class="photo-widget__comments-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Architecto aspernatur assumenda at atque commodi debitis deleniti dolor eius, eligendi facilis,
+                        harum illum laborum nemo nobis officiis omnis quibusdam sapiente, tempore.</p>
+                </div>
+            </li>
+            <li class="photo-widget__comments-item">
+                <div class="photo-widget__comments-avatar">
+                    <a href="#"><img class="photo-widget__comments-avatar-1" src="img/wdg-pic-comment1.jpg" alt=""></a>
+                </div>
+                <div class="photo-widget__comments-text">
+                    <a href="#"><p class="photo-widget__comments-name">Hannah Kern</p></a>
+                    <p class="photo-widget__comments-message">Thats SWEEEEEEET!</p>
+                </div>
+            </li>
+            <li class="photo-widget__comments-item">
+                <div class="photo-widget__comments-avatar">
+                    <a href="#"><img class="photo-widget__comments-avatar-1" src="img/wdg-pic-comment1.jpg" alt=""></a>
+                </div>
+                <div class="photo-widget__comments-text">
+                    <a href="#"><p class="photo-widget__comments-name">Hannah Kern</p></a>
+                    <p class="photo-widget__comments-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ab animi blanditiis cupiditate dicta expedita id illum impedit ipsam, itaque nostrum officiis
+                        praesentium quae quasi quibusdam quo rem sapiente velit, voluptate.</p>
+                </div>
+            </li>
+        </ul>
+        <div class="photo-widget__comments-item photo-widget__comments-item--active">
+            <div class="photo-widget__comments-avatar">
+                <img class="photo-widget__comments-avatar-2" src="img/wdg-pic-comment2.jpg" alt="">
+            </div>
+            <div class="photo-widget__comments-form">
+                <form id="comment" action="post">
+                <textarea placeholder="Eyes looks" name="comment-message" form="comment" rows="3"
+                          maxlength="500"></textarea>
+                    <button class="photo-widget__button">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</article>
 </body>
 </html>

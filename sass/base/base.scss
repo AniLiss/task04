@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.photo-widget {
+  margin: 0 auto;
+  max-width: 320px;
+  font-family: $regular-font;
+  font-size: 13px;
+  color: #3f4041;
+}
+
+h1,
+p,
+figure,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
